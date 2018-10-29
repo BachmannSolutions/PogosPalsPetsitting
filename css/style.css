@@ -1,0 +1,187 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+/* maybe margin? need to confirm */
+	margin: 0;
+
+}
+
+.row{
+	flex:1;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3{
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 2em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	/* padding: 5px 10px; */
+}
+
+.main-nav a{
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: capitalize;
+}
+
+.main-nav a:hover{
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .2em;
+	padding-bottom: .2em;
+	background: #afa4;
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+}
+
+.main-footer {
+	text-align: center;
+	background: #d9e4ea;
+	padding: .5em 0;
+	margin-top: 30px;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+/* ---- Page Elements ---- */
+
+.bullet {
+	list-style: none;
+	padding-left: 1em;
+}
+
+.bullet li {
+	position: relative;
+	padding-left: 20px;
+}
+
+.bullet li:before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-image: url('../img/silhouette-1314467_960_720.png');
+	background-size: cover;
+	background-position: center;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.name {
+		font-size: 3em;
+		margin: 0;
+	}
+	
+	.main-header,
+	.main-nav,
+	.row {
+		display: flex;
+		padding: 0 2em;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.col {
+		flex: 1 50%;
+	}
+
+	.row {
+		flex-wrap: wrap;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 25px;
+	} 
+
+	.container {
+		margin: 2em;
+	} 
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.col {
+		flex-basis: 0;
+	}
+}
+
