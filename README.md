@@ -1,6 +1,7 @@
 # Pogo's Pals Petsitting
 
 ## Change Log
+2018-11-15:	Corrected website link and updated minor page content
 2018-11-05:	Updated to include Jquery  
 2018-10-29:	Initial release
 
