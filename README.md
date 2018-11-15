@@ -7,7 +7,7 @@
 ## Description
 This is the start of a landing page for a petsitting website, [Pogo's Pals Petsitting](https://www.pogospalspetsitting.com). The company owns the domain, but has it auto-directing clients to the Facebook page. The company is looking to better market their product through the domain and use Facebook as a supporting tool, not as a primary tool moving forward. 
 
-This website primary uses [Booststrap](https://getbootstrap.com/). Also used is CSS and Jquery.
+This website primary uses [Bootstrap](https://getbootstrap.com/). Also used is CSS and Jquery.
 
 ## Installation
 This program does not require installation. You should just run the index.html file.
